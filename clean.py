@@ -66,7 +66,7 @@ def build_audience_column(df: pd.DataFrame) -> pd.DataFrame:
     @param df - the original DataFrame
     @return a DataFrame with a new column added
     """
-    json_path = Path('data/genre.json')
+    json_path = Path('data/audience.json')
     with open(json_path, 'r') as json_file:
         audience_data = json.load(json_file)
         audience_conditions = [
